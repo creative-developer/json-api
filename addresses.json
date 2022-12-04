@@ -1,0 +1,138 @@
+{
+  "openapi": "3.1.0",
+  "x-stoplight": {
+    "id": "czf6m1nd947uf"
+  },
+  "info": {
+    "title": "Address",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/api/v1/address/country/list": {
+      "get": {
+        "summary": "Get country list",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "message": null,
+                      "data": [
+                        {
+                          "uuid": "string",
+                          "name": "string",
+                          "currencyUuid": "string"
+                        }
+                      ],
+                      "errors": null
+                    }
+                  },
+                  "properties": {
+                    "message": {
+                      "type": "null"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "uuid": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "currencyUuid": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "errors": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-v1-address-country-list"
+      }
+    },
+    "/api/v1/address/language/list": {
+      "get": {
+        "summary": "Get language list",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "message": null,
+                      "data": [
+                        {
+                          "uuid": "string",
+                          "name": "string",
+                          "currencyUuid": "string"
+                        }
+                      ],
+                      "errors": null
+                    }
+                  },
+                  "properties": {
+                    "message": {
+                      "type": "null"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "uuid": {
+                            "type": "string"
+                          },
+                          "code": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "flag": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "errors": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-v1-address-country-list"
+      },
+      "parameters": []
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
